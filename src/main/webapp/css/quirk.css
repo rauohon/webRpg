@@ -14115,7 +14115,7 @@ fieldset[disabled] .btn-fb.active {
 /***** SIGN UP *****/
 .signup {
   position: absolute;
-  top: 40px;
+  top: 230px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 300;

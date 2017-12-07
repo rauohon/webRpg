@@ -459,7 +459,7 @@
 									<li class="media">
 										<div class="media-left">
 											<a href="#"> <img class="media-object img-circle"
-												src="/images/photos/user2.png" alt="">
+												src="images/photos/user2.png" alt="">
 											</a>
 										</div>
 										<div class="media-body">
@@ -474,7 +474,7 @@
 									<li class="media">
 										<div class="media-left">
 											<a href="#"> <img class="media-object img-circle"
-												src="/images/photos/user10.png" alt="">
+												src="images/photos/user10.png" alt="">
 											</a>
 										</div>
 										<div class="media-body">
@@ -489,7 +489,7 @@
 									<li class="media">
 										<div class="media-left">
 											<a href="#"> <img class="media-object img-circle"
-												src="/images/photos/user3.png" alt="">
+												src="images/photos/user3.png" alt="">
 											</a>
 										</div>
 										<div class="media-body">
@@ -504,7 +504,7 @@
 									<li class="media">
 										<div class="media-left">
 											<a href="#"> <img class="media-object img-circle"
-												src="/images/photos/user5.png" alt="">
+												src="images/photos/user5.png" alt="">
 											</a>
 										</div>
 										<div class="media-body">
@@ -519,7 +519,7 @@
 									<li class="media">
 										<div class="media-left">
 											<a href="#"> <img class="media-object img-circle"
-												src="/images/photos/user2.png" alt="">
+												src="images/photos/user2.png" alt="">
 											</a>
 										</div>
 										<div class="media-body">
@@ -547,7 +547,7 @@
 									<li class="media">
 										<div class="media-left">
 											<a href="#"> <img class="media-object img-circle"
-												src="/images/photos/user9.png" alt="">
+												src="images/photos/user9.png" alt="">
 											</a>
 										</div>
 										<div class="media-body">
@@ -560,7 +560,7 @@
 									<li class="media">
 										<div class="media-left">
 											<a href="#"> <img class="media-object img-circle"
-												src="/images/photos/user10.png" alt="">
+												src="images/photos/user10.png" alt="">
 											</a>
 										</div>
 										<div class="media-body">
@@ -573,7 +573,7 @@
 									<li class="media">
 										<div class="media-left">
 											<a href="#"> <img class="media-object img-circle"
-												src="/images/photos/user3.png" alt="">
+												src="images/photos/user3.png" alt="">
 											</a>
 										</div>
 										<div class="media-body">
@@ -586,7 +586,7 @@
 									<li class="media">
 										<div class="media-left">
 											<a href="#"> <img class="media-object img-circle"
-												src="/images/photos/user4.png" alt="">
+												src="images/photos/user4.png" alt="">
 											</a>
 										</div>
 										<div class="media-body">
@@ -599,7 +599,7 @@
 									<li class="media">
 										<div class="media-left">
 											<a href="#"> <img class="media-object img-circle"
-												src="/images/photos/user6.png" alt="">
+												src="images/photos/user6.png" alt="">
 											</a>
 										</div>
 										<div class="media-body">

@@ -20,12 +20,12 @@
 	
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
 	<resources mapping="/resources/**" location="/resources/" />
-	<resources mapping="/css/**" location="/WEB-INF/views/css/" />
-	<resources mapping="/images/**" location="/WEB-INF/views/images/" />
-	<resources mapping="/js/**" location="/WEB-INF/views/js/" />
-	<resources mapping="/fonts/**" location="/WEB-INF/views/fonts/" />
-	<resources mapping="/less/**" location="/WEB-INF/views/less/" />
-	<resources mapping="/lib/**" location="/WEB-INF/views/lib/" />
+	<resources mapping="/css/**" location="/css/" />
+	<resources mapping="/images/**" location="/images/" />
+	<resources mapping="/js/**" location="/js/" />
+	<resources mapping="/fonts/**" location="/fonts/" />
+	<resources mapping="/less/**" location="/less/" />
+	<resources mapping="/lib/**" location="/lib/" />
 
 	<!-- Tiles view resolver -->
 	<beans:bean id="tilesViewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">

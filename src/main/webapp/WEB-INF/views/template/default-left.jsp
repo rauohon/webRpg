@@ -4,9 +4,9 @@
 
 		<!-- ################## LEFT PANEL PROFILE ################## -->
 
-		<div class="media leftpanel-profile">
+		<div class="media leftpanel-profile" style="display: none">
 			<div class="media-left">
-				<a href="#"> <img src="/images/photos/loggeduser.png" alt=""
+				<a href="#"> <img src="images/photos/loggeduser.png" alt=""
 					class="media-object img-circle">
 				</a>
 			</div>
@@ -42,19 +42,36 @@
 		<!-- leftpanel-userinfo -->
 
 		<ul class="nav nav-tabs nav-justified nav-sidebar">
-			<li class="tooltips active" data-toggle="tooltip" title="Main Menu"><a
-				data-toggle="tab" data-target="#mainmenu"><i
-					class="tooltips fa fa-ellipsis-h"></i></a></li>
-			<li class="tooltips unread" data-toggle="tooltip" title="Check Mail"><a
-				data-toggle="tab" data-target="#emailmenu"><i
-					class="tooltips fa fa-envelope"></i></a></li>
-			<li class="tooltips" data-toggle="tooltip" title="Contacts"><a
-				data-toggle="tab" data-target="#contactmenu"><i
-					class="fa fa-user"></i></a></li>
-			<li class="tooltips" data-toggle="tooltip" title="Settings"><a
-				data-toggle="tab" data-target="#settings"><i class="fa fa-cog"></i></a></li>
-			<li class="tooltips" data-toggle="tooltip" title="Log Out"><a
-				href="signin.html"><i class="fa fa-sign-out"></i></a></li>
+			<li class="tooltips active" data-toggle="tooltip" title="Main Menu">
+				<a data-toggle="tab" data-target="#mainmenu">
+					<i class="tooltips fa fa-ellipsis-h"></i>
+				</a>
+			</li>
+			<li class="tooltips unread" data-toggle="tooltip" title="Check Mail" style="display: none">
+				<a data-toggle="tab" data-target="#emailmenu">
+					<i class="tooltips fa fa-envelope"></i>
+				</a>
+			</li>
+			<li class="tooltips" data-toggle="tooltip" title="Contacts" style="display: none">
+				<a data-toggle="tab" data-target="#contactmenu">
+					<i class="fa fa-user"></i>
+				</a>
+			</li>
+			<li class="tooltips" data-toggle="tooltip" title="Settings" style="display: none">
+				<a data-toggle="tab" data-target="#settings">
+					<i class="fa fa-cog"></i>
+				</a>
+			</li>
+			<li class="tooltips" onClick="javascript:header.pageSubmitFn('signIn')">
+				<a>
+					<i class="fa fa-sign-in"></i>
+				</a>
+			</li>
+			<li class="tooltips" data-toggle="tooltip" title="Log Out" style="display: none">
+				<a href="signin.html">
+					<i class="fa fa-sign-out"></i>
+				</a>
+			</li>
 		</ul>
 
 		<div class="tab-content">
@@ -160,7 +177,7 @@
 					<li class="media"><a href="#">
 							<div class="media-left">
 								<img class="media-object img-circle"
-									src="/images/photos/user1.png" alt="">
+									src="images/photos/user1.png" alt="">
 							</div>
 							<div class="media-body">
 								<h4 class="media-heading">Christina R. Hill</h4>
@@ -170,7 +187,7 @@
 					<li class="media"><a href="#">
 							<div class="media-left">
 								<img class="media-object img-circle"
-									src="/images/photos/user2.png" alt="">
+									src="images/photos/user2.png" alt="">
 							</div>
 							<div class="media-body">
 								<h4 class="media-heading">Floyd M. Romero</h4>
@@ -180,7 +197,7 @@
 					<li class="media"><a href="#">
 							<div class="media-left">
 								<img class="media-object img-circle"
-									src="/images/photos/user3.png" alt="">
+									src="images/photos/user3.png" alt="">
 							</div>
 							<div class="media-body">
 								<h4 class="media-heading">Jennie S. Gray</h4>
@@ -190,7 +207,7 @@
 					<li class="media"><a href="#">
 							<div class="media-left">
 								<img class="media-object img-circle"
-									src="/images/photos/user4.png" alt="">
+									src="images/photos/user4.png" alt="">
 							</div>
 							<div class="media-body">
 								<h4 class="media-heading">Alia J. Locher</h4>
@@ -200,7 +217,7 @@
 					<li class="media"><a href="#">
 							<div class="media-left">
 								<img class="media-object img-circle"
-									src="/images/photos/user5.png" alt="">
+									src="images/photos/user5.png" alt="">
 							</div>
 							<div class="media-body">
 								<h4 class="media-heading">Nicholas T. Hinkle</h4>
@@ -210,7 +227,7 @@
 					<li class="media"><a href="#">
 							<div class="media-left">
 								<img class="media-object img-circle"
-									src="/images/photos/user6.png" alt="">
+									src="images/photos/user6.png" alt="">
 							</div>
 							<div class="media-body">
 								<h4 class="media-heading">Jamie W. Bradford</h4>
@@ -220,7 +237,7 @@
 					<li class="media"><a href="#">
 							<div class="media-left">
 								<img class="media-object img-circle"
-									src="/images/photos/user7.png" alt="">
+									src="images/photos/user7.png" alt="">
 							</div>
 							<div class="media-body">
 								<h4 class="media-heading">Pamela J. Stump</h4>
@@ -230,7 +247,7 @@
 					<li class="media"><a href="#">
 							<div class="media-left">
 								<img class="media-object img-circle"
-									src="/images/photos/user8.png" alt="">
+									src="images/photos/user8.png" alt="">
 							</div>
 							<div class="media-body">
 								<h4 class="media-heading">Refugio C. Burgess</h4>
@@ -240,7 +257,7 @@
 					<li class="media"><a href="#">
 							<div class="media-left">
 								<img class="media-object img-circle"
-									src="/images/photos/user9.png" alt="">
+									src="images/photos/user9.png" alt="">
 							</div>
 							<div class="media-body">
 								<h4 class="media-heading">Ashley T. Brewington</h4>
@@ -250,7 +267,7 @@
 					<li class="media"><a href="#">
 							<div class="media-left">
 								<img class="media-object img-circle"
-									src="/images/photos/user10.png" alt="">
+									src="images/photos/user10.png" alt="">
 							</div>
 							<div class="media-body">
 								<h4 class="media-heading">Roberta F. Horn</h4>

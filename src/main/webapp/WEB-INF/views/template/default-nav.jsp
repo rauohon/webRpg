@@ -4,7 +4,7 @@
   <div class="headerpanel">
 
     <div class="logopanel">
-      <h2><a href="index.html">Quirk</a></h2>
+      <h2><a onClick="javascript:header.pageSubmitFn('main')">Web RPG</a></h2>
     </div><!-- logopanel -->
 
     <div class="headerbar">
@@ -22,11 +22,12 @@
 
       <div class="header-right">
         <ul class="headermenu">
-          <li>
+          <li style="display: none">
             <div id="noticePanel" class="btn-group">
               <button class="btn btn-notice alert-notice" data-toggle="dropdown">
                 <i class="fa fa-globe"></i>
               </button>
+                   
               <div id="noticeDropdown" class="dropdown-menu dm-notice pull-right">
                 <div role="tabpanel">
                   <!-- Nav tabs -->
@@ -164,9 +165,10 @@
                   </div>
                 </div>
               </div>
+            
             </div>
           </li>
-          <li>
+          <li style="display: none">
             <div class="btn-group">
               <button type="button" class="btn btn-logged" data-toggle="dropdown">
                 <img src="images/photos/loggeduser.png" alt="" />
@@ -181,7 +183,7 @@
               </ul>
             </div>
           </li>
-          <li>
+          <li style="display: none">
             <button id="chatview" class="btn btn-chat alert-notice">
               <span class="badge-alert"></span>
               <i class="fa fa-comments-o"></i>
