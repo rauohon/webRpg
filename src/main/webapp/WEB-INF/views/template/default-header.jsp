@@ -31,6 +31,8 @@
 
 			if (pageName == "main") {
 				$("#frm").attr("action", "main");
+			}else if (pageName == "signInPage") {
+				$("#frm").attr("action", "signInPage");
 			}else if (pageName == "signIn") {
 				$("#frm").attr("action", "signIn");
 			}else if (pageName == "signUp") {

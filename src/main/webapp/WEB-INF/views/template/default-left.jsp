@@ -62,7 +62,7 @@
 					<i class="fa fa-cog"></i>
 				</a>
 			</li>
-			<li class="tooltips" onClick="javascript:header.pageSubmitFn('signIn')">
+			<li class="tooltips" onClick="javascript:header.pageSubmitFn('signInPage')">
 				<a>
 					<i class="fa fa-sign-in"></i>
 				</a>

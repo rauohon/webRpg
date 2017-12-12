@@ -19,11 +19,18 @@ public class HomeController {
 		return "home.tiles";
 	}
 	
+	@RequestMapping(value = "signInPage", method = RequestMethod.GET)
+	public String signInPage() {
+		logger.info("Sign In Page!");
+		
+		return "signIn";
+	}
+	
 	@RequestMapping(value = "signIn", method = RequestMethod.GET)
 	public String signIn() {
 		logger.info("Sign In!");
 		
-		return "signIn";
+		return "home.tiles";
 	}
 	
 	@RequestMapping(value = "signUp", method = RequestMethod.GET)
