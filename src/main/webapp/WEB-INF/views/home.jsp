@@ -3,10 +3,6 @@
 
 <div class="mainpanel">
 
-	<!--<div class="pageheader">
-      <h2><i class="fa fa-home"></i> Dashboard</h2>
-    </div>-->
-
 	<div class="contentpanel">
 
 		<div class="row">
@@ -105,7 +101,7 @@
 			</div>
 			<!-- panel -->
 			
-			<div class="panel panel-site-traffic">
+			<div class="panel col-md-9">
 				<div class="panel-heading">
 					<ul class="panel-options">
 						<li><a><i class="fa fa-refresh"></i></a></li>

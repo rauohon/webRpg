@@ -42,68 +42,24 @@
 						<button class="btn btn-primary btn-quirk btn-fb btn-block">Sign
 							Up Using Facebook</button>
 						<div class="or">or</div>
-						<form action="index.html">
+						<form id='valid' action="signUp">
 							<div class="form-group mb15">
-								<input type="text" class="form-control"
-									placeholder="Enter Your Username">
+								<input type="email" name="userId" class="form-control" placeholder="Enter Your Email">
 							</div>
 							<div class="form-group mb15">
-								<input type="text" class="form-control"
-									placeholder="Enter Your Password">
+								<input type="password" name="userPWD" class="form-control" placeholder="Enter Your Password" required="required">
 							</div>
 							<div class="form-group mb15">
-								<input type="text" class="form-control"
-									placeholder="Enter Your Full Name">
-							</div>
-
-							<div class="row mb15">
-								<div class="col-xs-5">
-									<div class="form-group">
-										<select class="form-control" style="width: 100%"
-											data-placeholder="Birth Month">
-											<option value="">&nbsp;</option>
-											<option value="January">January</option>
-											<option value="February">February</option>
-											<option value="March">March</option>
-											<option value="April">April</option>
-											<option value="May">May</option>
-											<option value="June">June</option>
-										</select>
-									</div>
-								</div>
-								<div class="col-xs-3">
-									<div class="form-group">
-										<select class="form-control" style="width: 100%"
-											data-placeholder="Birth Day">
-											<option value="">&nbsp;</option>
-											<option value="01">01</option>
-											<option value="02">02</option>
-											<option value="03">03</option>
-											<option value="04">04</option>
-											<option value="05">05</option>
-											<option value="06">06</option>
-										</select>
-									</div>
-								</div>
-								<div class="col-xs-4">
-									<div class="form-group">
-										<select class="form-control" style="width: 100%"
-											data-placeholder="Birth Year">
-											<option value="">&nbsp;</option>
-											<option value="1986">1986</option>
-											<option value="1987">1987</option>
-											<option value="1988">1988</option>
-										</select>
-									</div>
-								</div>
+								<input type="text" name="userName" class="form-control" placeholder="Enter Your Name" required="required">
 							</div>
 
 							<div class="form-group mb20">
-								<label class="ckbox"> <input type="checkbox"
-									name="checkbox"> <span>Accept terms and
-										conditions</span>
+								<label class="ckbox"> 
+									<input type="checkbox" name="checkbox" required="required"> 
+									<span>Accept terms and conditions</span>
 								</label>
 							</div>
+							<div class="error"></div>
 							<div class="form-group">
 								<button class="btn btn-success btn-quirk btn-block">Create
 									Account</button>
@@ -143,7 +99,7 @@
 					<hr class="invisible">
 
 					<div class="form-group">
-						<a href="signIn"
+						<a href="signInPage"
 							class="btn btn-default btn-quirk btn-stroke btn-stroke-thin btn-block btn-sign">Already
 							a member? Sign In Now!</a>
 					</div>
@@ -159,14 +115,19 @@
 	<script src="lib/jquery/jquery.js"></script>
 	<script src="lib/bootstrap/js/bootstrap.js"></script>
 	<script src="lib/select2/select2.js"></script>
-
+	<script src="lib/jquery-validate/jquery.validate.js"></script>
 	<script>
-$(function() {
-
-  // Select2 Box
-  $("select.form-control").select2({ minimumResultsForSearch: Infinity });
-
-});
+	$(document).ready(function() {
+		$('#valid').validate({
+			errorLabelContainer: jQuery('#valid div.error')
+		  });
+	});
+	$(function() {
+	
+	  // Select2 Box
+	  $("select.form-control").select2({ minimumResultsForSearch: Infinity });
+	
+	});
 </script>
 
 </body>

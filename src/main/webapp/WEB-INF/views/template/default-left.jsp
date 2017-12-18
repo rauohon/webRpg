@@ -62,12 +62,12 @@
 					<i class="fa fa-cog"></i>
 				</a>
 			</li>
-			<li class="tooltips" onClick="javascript:header.pageSubmitFn('signIn')">
+			<li class="tooltips" onClick="javascript:header.pageSubmitFn('signInPage')">
 				<a>
 					<i class="fa fa-sign-in"></i>
 				</a>
 			</li>
-			<li class="tooltips" onClick="javascript:header.pageSubmitFn('signUp')">
+			<li class="tooltips" onClick="javascript:header.pageSubmitFn('signUpPage')">
 				<a>
 					<i class="fa fa-user-plus"></i>
 				</a>
@@ -87,14 +87,14 @@
 
 				<h5 class="sidebar-title">Main Menu</h5>
 				<ul class="nav nav-pills nav-stacked nav-quirk">
-					<li class="active">
-						<a href="index.html">
+					<li id="main" class="active" onclick="javascript:header.pageSubmitFn('main')">
+						<a>
 							<i class="fa fa-home"></i> 
 							<span>Home Page</span>
 						</a>
 					</li>
-					<li>
-						<a href="index.html">
+					<li id="village" onclick="javascript:header.pageSubmitFn('village')">
+						<a>
 							<i class="fa fa fa-connectdevelop"></i> 
 							<span>Game Play</span>
 						</a>
@@ -104,7 +104,7 @@
 							<span></span>
 						</a>
 					</li>
-					<li class="nav-parent">
+					<li id="board" class="nav-parent">
 						<a>
 							<i class="fa fa-th-list"></i>
 							<span>Boards</span>

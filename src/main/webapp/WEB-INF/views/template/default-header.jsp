@@ -31,10 +31,17 @@
 
 			if (pageName == "main") {
 				$("#frm").attr("action", "main");
+			}else if (pageName == "signInPage") {
+				$("#frm").attr("action", "signInPage");
 			}else if (pageName == "signIn") {
 				$("#frm").attr("action", "signIn");
+			}else if (pageName == "signUpPage") {
+				$("#frm").attr("action", "signUpPage");
 			}else if (pageName == "signUp") {
 				$("#frm").attr("action", "signUp");
+			}else if (pageName == "village") {
+				$("#frm").attr("action", "village");
+				$("#frm").attr("method", "post");
 			}
 
 			$("#frm").submit();
