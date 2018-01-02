@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.activityRPG.dao.IMBatisDao">
+<mapper namespace="com.webapp.webRpg.dao.MyBatisDao">
+	<select id="idCheck" parameterType="String" resultType="Integer">
+		SELECT	COUNT(MB_ID)
+		FROM	MEMBERS
+		WHERE	MB_ID = #{_parameter}
+	</select>
+	
+	<insert id="signUp" parameterType="map">
+		INSERT	INTO 
+			MEMBERS(MB_ID, MB_PWD, MB_NAME, MB_DATE, MB_CDCODE)
+		VALUES	(#{userId}, #{userPWD}, #{userName}, DEFAULT, DEFAULT)
+	</insert>
 </mapper>

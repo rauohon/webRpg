@@ -55,8 +55,8 @@ public class HomeController {
 		return "signUp";
 	}
 	
-	@RequestMapping(value = "signUp", method = RequestMethod.GET)
-	public String signUp(HttpServletRequest request) {
+	@RequestMapping(value = "signUp", method = RequestMethod.POST)
+	public ModelAndView signUp(HttpServletRequest request) {
 		logger.info("Sign Up!");
 		
 		HashMap<String, Object> hashMap = new HashMap<String, Object>();
@@ -65,9 +65,9 @@ public class HomeController {
 		hashMap.put("userPWD", request.getParameter("userPWD"));
 		hashMap.put("userName", request.getParameter("userName"));
 		
-		ms.entrance(0, hashMap);
+		mav = (ModelAndView) ms.entrance(0, hashMap);
 		
-		return signInPage();
+		return mav;
 	}
 	
 }

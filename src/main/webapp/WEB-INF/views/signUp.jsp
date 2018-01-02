@@ -42,7 +42,7 @@
 						<button class="btn btn-primary btn-quirk btn-fb btn-block">Sign
 							Up Using Facebook</button>
 						<div class="or">or</div>
-						<form id='valid' action="signUp">
+						<form id='valid' action="signUp"method="post">
 							<div class="form-group mb15">
 								<input type="email" name="userId" class="form-control" placeholder="Enter Your Email">
 							</div>

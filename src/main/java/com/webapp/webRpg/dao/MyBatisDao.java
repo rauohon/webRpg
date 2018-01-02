@@ -3,6 +3,8 @@
  */
 package com.webapp.webRpg.dao;
 
+import java.util.HashMap;
+
 /**
  * @클래스명 : MyBatisDao
  * @작성자 : 신태휘
@@ -13,8 +15,8 @@ package com.webapp.webRpg.dao;
 public interface MyBatisDao {
 	
 	/*회원 관련*/
-	public int idCheck();
+	public int idCheck(String string);
 	
-	public int signUp();
+	public int signUp(HashMap<String, Object> resMap);
 
 }
