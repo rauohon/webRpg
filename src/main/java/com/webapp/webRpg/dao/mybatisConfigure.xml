@@ -7,10 +7,8 @@
 <!-- 		<setting name="jdbcTypeForNull" value="INTEGER"/> -->
 <!-- 	</settings> -->
 	<typeAliases>
-		<!-- 		<typeAlias alias="member" type="com.taehwy.bean.Bean"/> -->
 		<!-- alias를 직접 지정해서 활용 -->
-		<package name="com.webapp.webRpg.beans"/>
-		<!-- 		어노테이션을 활용 -->
+		<typeAlias alias="camelMap" type="com.webapp.webRpg.utils.CamelMap"/>
 	</typeAliases>
 	<typeHandlers>
 		<!--		<typeHandler javaType="java.util.Date" jdbcType="DATE" handler="com.taehwy.dao.CustomDateHandler"/> -->

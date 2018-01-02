@@ -21,7 +21,7 @@ public class HomeController {
 	@Autowired
 	private MemberService ms;
 	
-	private ModelAndView mav = null;
+	private ModelAndView mav = new ModelAndView();
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 	@RequestMapping(value = "main", method = RequestMethod.GET)
@@ -40,12 +40,17 @@ public class HomeController {
 	
 	@RequestMapping(value = "signIn", method = RequestMethod.POST)
 	public String signIn(HttpServletRequest request) {
+		String result = "";
+		HashMap<String, Object> hashMap = new HashMap<String, Object>();
+		
 		logger.info("Sign In!");
 		
-		logger.info(request.getParameter("userId"));
-		logger.info(request.getParameter("userPWD"));
+		hashMap.put("userId", request.getParameter("userId"));
+		hashMap.put("userPWD", request.getParameter("userPWD"));
+
+		result = (String) ms.entrance(1, hashMap);
 		
-		return "home.tiles";
+		return result;
 	}
 	
 	@RequestMapping(value = "signUpPage", method = RequestMethod.GET)

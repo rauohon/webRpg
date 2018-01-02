@@ -12,4 +12,10 @@
 			MEMBERS(MB_ID, MB_PWD, MB_NAME, MB_DATE, MB_CDCODE)
 		VALUES	(#{userId}, #{userPWD}, #{userName}, DEFAULT, DEFAULT)
 	</insert>
+	
+	<select id="pwdCheck" parameterType="String" resultType="String">
+		SELECT	MB_PWD
+		FROM	MEMBERS
+		WHERE	MB_ID = #{_parameter}
+	</select>
 </mapper>

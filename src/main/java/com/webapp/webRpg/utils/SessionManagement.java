@@ -1,8 +1,6 @@
-/**
- * 
- */
 package com.webapp.webRpg.utils;
 
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
@@ -14,7 +12,7 @@ import org.springframework.web.context.request.RequestContextHolder;
  * @설명 : 
  * @수정이력 - 수정일, 수정자, 수정내용
  */
-@Service
+@Component
 public class SessionManagement {
 
 	/* RequestContetHolder Class --> Spring 3.0 이상

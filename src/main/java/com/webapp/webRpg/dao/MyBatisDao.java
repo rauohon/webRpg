@@ -19,4 +19,6 @@ public interface MyBatisDao {
 	
 	public int signUp(HashMap<String, Object> resMap);
 
+	public String pwdCheck(String string);
+
 }
